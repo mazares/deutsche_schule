@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@font-face {
+    font-family: 'Atkinson';
+    src: url('./assets/fonts/AtkinsonHyperlegible-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Elite';
+    src: url('./assets/fonts/SpecialElite-Regular.ttf') format('truetype');
+}
+
+*{
+    font-family: "Atkinson", sans-serif;
+}
+
+:root{
+    --dark:#333;
+    --dark-primary: #111;
+    --dark-secondary: #444;
+    --light:#ddd;
+    --light-primary: #aaa;
+    --light-secondary: #eee;
+}
+
+.dark{
+ background: radial-gradient(
+ circle at 30% 30%,
+ var(--dark-secondary),	var(--dark-primary)
+ );
+ color: var(--light);
+}
+
+.light{
+ background: radial-gradient(circle at 30% 30%,
+ var(--light-secondary),	var(--light-primary)
+ );
+ color: var(--dark);
+}
+
+
+
+a.active 	{
+    color: red;
+}
